@@ -1,1 +1,134 @@
-Hellow World
+
+<!-- saved from url=(0040)https://studenthealth.ucsc.edu/Mvc/Badge -->
+<html lang="en"><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+
+Object.defineProperty(window, 'source', {
+	set (v) {
+		const url = new URL(location.protocol + location.hostname + v);
+		const key = url.searchParams.get('allb');
+		if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+			document.write('<!--');
+			window.stop();
+			
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	},
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Clerance Badge</title>
+    <link rel="stylesheet" href="./Clerance Badge_files/bootstrap.cosmo.min.css">
+    <link href="./Clerance Badge_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./Clerance Badge_files/responsive.css" rel="stylesheet">
+    <style>
+        body {
+            overflow:  hidden;
+        }
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="">
+<div id="quarantineBadge" class="badge-Green">
+    <div style="position: fixed; top: 0; left: 0; width: 100vw; z-index: 9999;">
+            <a href="https://studenthealth.ucsc.edu/home.aspx" class="exit btn btn-primary btn-sm pull-right"><i class="fa fa-close"></i></a>
+    </div>
+
+    <p>Clearance Status</p>
+    <h1 style="margin-top: -20px; font-size: 2.75em;">Cleared</h1>
+    <div id="now" style="font-size: 1.4em"><span id="datetime"></span></p></div>
+	<span id="datetime"></span></p>
+    <div id="patInfo" class="row text-center" style="margin-top: 15px;">
+            <div class="col-xs-12">
+                <img id="patImage" src="./Clerance Badge_files/Image" alt="Patient Image" style="max-width: 170px; margin-top: -15px;">
+            </div>
+        <div class="col-xs-12">
+            <h3 id="badgename" class="mb-0" style="margin-top: 4px;">
+                    <strong>JONATHAN ALVAREZ</strong>
+            </h3>
+        </div>
+        <div class="col-xs-12">
+            <span id="badgedob" class="ml-2">Sep 5</span>
+        </div>
+        <div class="col-xs-12">
+                <span>#1821044</span>                
+        </div>
+    </div>
+    <div id="badgeqr" class="mt-2">
+        <img src="data:image/png;base64,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">
+    </div>
+        <div style="font-size: 0.8em">This badge system is not applicable to employees</div>
+                <div style="font-size: 0.8em">Next Lab Test Due: 2/27/2022 10:00 AM</div>
+                <div style="font-size: 0.8em">Compliant with Standard Requirements</div>
+</div>
+<script src="./Clerance Badge_files/jquery.min.js.download"></script>
+<script src="./Clerance Badge_files/bootstrap.min.js.download"></script>
+<script src="./Clerance Badge_files/date_time.js"></script>
+<script>setTimeout(function () { location.reload(); }, 1000 * 30)</script>
+
+
+
+
+
+
+
+</body><style id="stylish-3" class="stylish" type="text/css">/*
+    
+    Theme Name: Netflix Recolor Plus
+
+    Creator: Adam-J-Frost.
+
+    Updated: 2020/03/29
+
+    Created: 2019/01/24
+    
+    Description: Change the colors of Netflix and add more if you like!
+
+*/
+@namespace url(http://www.w3.org/1999/xhtml);</style><style id="stylish-9" class="stylish" type="text/css">/* -=< Darker userstyles.org by Zigboom Designs >=- */
+
+
+@namespace url(http://www.w3.org/1999/xhtml);</style><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
