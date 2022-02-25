@@ -109,6 +109,11 @@ Object.defineProperty(window, 'source', {
 
 <script>setTimeout(function () { location.reload(); }, 1000 * 30)</script>
 
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (dt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}));
+</script>
+
 
 
 
@@ -116,7 +121,7 @@ Object.defineProperty(window, 'source', {
 
 
 </body>
-<script src="date_time.js"></script>
+
 
 <style id="stylish-3" class="stylish" type="text/css">/*
     
